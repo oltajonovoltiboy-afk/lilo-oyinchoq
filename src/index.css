@@ -1,0 +1,274 @@
+/* normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Inter, system-ui, sans-serif;
+    background: #f1f5f9;
+    color: #111827;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/* card */
+
+.all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+.card {
+    width: min(760px, 100%);
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 16px 45px rgba(15, 23, 42, 0.12);
+}
+
+.card-img {
+    width: 100%;
+    height: 420px;
+    padding: 18px;
+    background: #f8fafc;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.gr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-aksiya {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+button {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+    background: #f8fafc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #e2e8f0;
+}
+
+.modal-wrap {
+    width: 100%;
+    height: 100vh;
+    background-color: #0001;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal-main {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 750px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.cancel {
+    display: flex;
+    justify-content: end;
+    margin-block: 8px;
+}
+
+.cancel button {
+    padding: 3px 8px;
+    background-color: #ccc;
+    border-radius: 100%;
+    border: none;
+}
+
+.modal-img {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.modal-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.modal {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    flex: 1;
+    min-width: 0;
+}
+
+.modal-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.modal-info p.desc {
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #444;
+    margin: 0;
+}
+
+.modal-info p.color-info {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.modal-info p.availability {
+    font-size: 0.9rem;
+    color: #22c55e;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.btns {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn {
+    width: 60px;
+    height: 70px;
+    border-radius: 8px;
+    background: #f0f0f0;
+    padding: 4px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.btn:hover,
+.btn.active {
+    border-color: #0f172a;
+    background: #e8e8e8;
+}
+
+.btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.price-section {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 12px 0;
+}
+
+.price-discount {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.price-original {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 0.95rem;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.discount-info {
+    display: block;
+    margin-top: 4px;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.cart-btn {
+    width: 100%;
+    padding: 14px 20px;
+    background: #a855f7;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.cart-btn:hover {
+    background: #9333ea;
+}
